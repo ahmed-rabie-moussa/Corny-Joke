@@ -24,9 +24,10 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_weight="3">
+                android:layout_weight="4">
 
                 <TextView
+                    android:id="@+id/presented_joke"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:gravity="center"
@@ -38,29 +39,58 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginBottom="20dp"
-                android:layout_weight="7">
+                android:layout_weight="6">
 
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentStart="true"
-                    android:layout_marginStart="20dp"
-                    android:background="@drawable/plus_minus_background"
-                    android:text="-"
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center">
 
-                    android:textColor="#fff"
-                    android:textSize="20sp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@id/minus_button"
+                        android:layout_marginStart="26dp"
+                        android:layout_marginBottom="12dp"
+                        android:text="Down Votes"
+                        android:textSize="15sp"
+                        android:textStyle="bold">
 
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentEnd="true"
-                    android:layout_marginEnd="20dp"
-                    android:background="@drawable/plus_minus_background"
-                    android:text="+"
-                    android:textColor="#fff"
-                    android:textSize="20sp" />
+                    </TextView>
+
+                    <Button
+                        android:id="@+id/minus_button"
+                        android:layout_width="50dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="40dp"
+                        android:background="@drawable/plus_minus_background"
+                        android:text="-"
+                        android:textColor="#fff"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@id/plus_button"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="36dp"
+                        android:layout_marginBottom="12dp"
+                        android:text="Up Votes"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/plus_button"
+                        android:layout_width="50dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="40dp"
+                        android:background="@drawable/plus_minus_background"
+                        android:text="+"
+                        android:textColor="#fff"
+                        android:textSize="20sp" />
+                </RelativeLayout>
             </RelativeLayout>
         </LinearLayout>
     </androidx.cardview.widget.CardView>

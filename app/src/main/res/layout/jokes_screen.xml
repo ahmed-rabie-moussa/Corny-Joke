@@ -12,7 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="55"
-        tools:layout="@layout/fetched_joke_fragment" />
+        tools:layout="@layout/joke_fragment" />
 
     <fragment
         android:id="@+id/lowerJokeFragment"
